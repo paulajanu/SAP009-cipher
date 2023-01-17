@@ -1,14 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
   <head>
     <meta charset="utf-8">
-    <title>Caesar Cipher</title>
+    <title>Departamento de Informações</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div id="root">
-      <h1>Hello world!</h1>
+      <h1>Departamento de Informações</h1>
+      <h2>Codifique suas mensagens</h2>
+      <p>O Departamento de Informações disponibiliza essa ferramenta para facilitar <br> na codificação e 
+      descodificação de mensagens confidenciais </p>
+      <img src="https://cdn-icons-png.flaticon.com/512/1320/1320547.png" alt="" class="logo-brasao">
     </div>
+    <div id="area-texto">
+      <textarea id="entradaTexto" placeholder="Escreva aqui sua mensagem confidencial"></textarea>
+      <textarea id="saidaTexto" readonly></textarea>
+    </div>
+    <div id="chave">
+      <label for="chaveSecreta">Chave secreta (nº):</label>
+      <input type="number" id="chaveSecreta" min="1" max="99"/>
+    </div>
+    <div>
+        <button id="botaoCodificar">Codificar</button>
+        <button>Descodificar</button>
+    <h4>© Desenvolvido por Ana Paula Januário</h4>
     <script src="index.js" type="module"></script>
   </body>
 </html>
