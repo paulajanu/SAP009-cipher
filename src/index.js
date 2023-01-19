@@ -1,11 +1,19 @@
 import cipher from './cipher.js';
 
-console.log(cipher);
+const botaoResultadoCod = document.getElementById("botaoCodificar"); 
+const botaoResultadoDescod = document.getElementById("botaoDescodificar"); 
+const campoTxtEntrada = document.getElementById("entradaTexto");
+const campoTxtSaida = document.getElementById("saidaTexto");  
+const deslocamento = document.getElementById("chaveSecreta"); 
 
-const botaoResultado = document.getElementById("botaoCodificar");
+botaoResultadoCod.addEventListener("click", acaoBotaoCod);
 
-botaoResultado.addEventListener("click", acaoDoBotao);
+function acaoBotaoCod(){
+    campoTxtSaida.value = cipher.encode(parseInt(deslocamento.value), campoTxtEntrada.value); 
+}
 
-function acaoDoBotao(){
-    console.log("função funcionando");
+botaoResultadoDescod.addEventListener("click", acaoBotaoDescod);
+
+function acaoBotaoDescod(){
+    campoTxtSaida.value = cipher.decode(parseInt(deslocamento.value), campoTxtEntrada.value);
 }
