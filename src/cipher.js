@@ -1,10 +1,5 @@
 const cipher = {
   encode: function (chave, txt) {
-    //if (typeof txt != "string" || typeof chave != "number" || typeof txt === "" || typeof chave === 0) {
-      //throw new TypeError("Mensagem e/ou chave secreta inválida")
-    //} 
-
-    // Acho que esse "if" acima não precisa -> Melhor colocar no index.js
     
     let txtCodificado = ""; 
     txt = txt.toUpperCase(); 
@@ -22,9 +17,6 @@ const cipher = {
     },
 
   decode: function (chave, txt) {
-    //if (typeof txt != "string" || typeof chave != "number" || typeof txt === "" || typeof chave === 0){
-      //throw new TypeError("Mensagem e/ou chave secreta inválida")
-    //}
     
     let txtDescodificado = ""
     txt = txt.toUpperCase();
