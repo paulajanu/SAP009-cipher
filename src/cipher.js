@@ -1,6 +1,9 @@
 const cipher = {
   encode: function (chave, txt) {
-    
+    if (typeof txt !== "string" || typeof chave !== "number" || txt === "" || chave === 0) {
+      throw new TypeError ("Mensagem e/ou chave secreta inválida");
+    }
+
     let txtCodificado = ""; 
     txt = txt.toUpperCase(); 
     
@@ -17,7 +20,10 @@ const cipher = {
   },
 
   decode: function (chave, txt) {
-    
+    if (typeof txt !== "string" || typeof chave !== "number" || txt === "" || chave === 0) {
+      throw new TypeError ("Mensagem e/ou chave secreta inválida");
+    }
+
     let txtDescodificado = "";
     txt = txt.toUpperCase();
     
