@@ -6,13 +6,14 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root">
+    <header>
       <h1>Departamento de Informações</h1>
       <h2>Codifique suas mensagens</h2>
       <p>O Departamento de Informações disponibiliza essa ferramenta para facilitar <br> na codificação e 
       descodificação de mensagens confidenciais </p>
       <img src="https://cdn-icons-png.flaticon.com/512/1320/1320547.png" alt="" class="logo-brasao">
-    </div>
+    </header>
+    <main>
     <div id="area-texto">
       <textarea id="entradaTexto" placeholder="Escreva aqui sua mensagem confidencial 🔐"></textarea>
       <textarea id="saidaTexto" readonly></textarea>
@@ -24,6 +25,8 @@
     <div id="botoes">
         <button id="botaoCodificar">Codificar</button>
         <button id="botaoDescodificar">Descodificar</button>
+    </div>
+    </main>
     <script src="index.js" type="module"></script>
   </body>
 </html>

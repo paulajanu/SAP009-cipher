@@ -4,11 +4,7 @@ body{
     text-align: center;
 }
 
-#root {
-    color: #ffffff;
-}
-
-h4 {
+header {
     color: #ffffff;
 }
 
@@ -18,10 +14,6 @@ h4 {
     top: 20px;
     right: 20px;
 }
-
-label {
-    color: white;
-  }
 
 #entradaTexto {
     height: 293px;
@@ -37,8 +29,9 @@ label {
 }
 
 ::placeholder {
-    color: #808080;
+    color: #000000;
     font-size: 15px;
+    opacity: 80%;
   }  
 
 #saidaTexto {
@@ -56,6 +49,7 @@ label {
 
 #chave {
     margin-right: 32%;
+    color: white;
 }
 
 #chaveSecreta {
@@ -65,6 +59,7 @@ label {
     border-radius: 5px;
     border: none;
     padding: 3px;
+    font-family: "Roboto Mono", monospace;
 }
 
 #botoes{
@@ -78,6 +73,7 @@ label {
     padding: 5px;
     margin-top: 15px;
     background-color:#ffffff;
+    font-family: "Roboto Mono", monospace;
 }
 
 #botaoDescodificar{
@@ -86,4 +82,5 @@ label {
     padding: 5px;
     margin-top: 15px;
     background-color: #ffffff;
+    font-family: "Roboto Mono", monospace;
 }

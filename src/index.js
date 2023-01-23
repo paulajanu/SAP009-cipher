@@ -9,11 +9,11 @@ const deslocamento = document.getElementById("chaveSecreta");
 botaoResultadoCod.addEventListener("click", acaoBotaoCod);
 
 function acaoBotaoCod(){
-    campoTxtSaida.value = cipher.encode(parseInt(deslocamento.value), campoTxtEntrada.value); 
+  campoTxtSaida.value = cipher.encode(parseInt(deslocamento.value), campoTxtEntrada.value); 
 }
 
 botaoResultadoDescod.addEventListener("click", acaoBotaoDescod);
 
 function acaoBotaoDescod(){
-    campoTxtSaida.value = cipher.decode(parseInt(deslocamento.value), campoTxtEntrada.value);
+  campoTxtSaida.value = cipher.decode(parseInt(deslocamento.value), campoTxtEntrada.value);
 }
