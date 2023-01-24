@@ -12,7 +12,8 @@ const cipher = {
       
       if (posicao >= 65 && posicao <= 90) { 
         txtCodificado += String.fromCharCode(((posicao - 65 + chave) % 26) + 65);
-      } else if (posicao >= 32 && posicao <= 64){ 
+      } 
+      if (posicao >= 32 && posicao <= 64) { 
         txtCodificado += txt.charAt(i);
       } 
     }
@@ -32,7 +33,8 @@ const cipher = {
       
       if (posicao >= 65 && posicao <= 90) {
         txtDescodificado += String.fromCharCode (((posicao + 65 - chave) % 26) + 65); 
-      } else if (posicao >= 32 && posicao <= 64) {
+      } 
+      if (posicao >= 32 && posicao <= 64) {
         txtDescodificado += txt.charAt(i);
       }
     } 
