@@ -6,26 +6,26 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
+    <header class="cabecalho">
       <h1>Departamento de Informações</h1>
       <h2>Codifique suas mensagens</h2>
       <p>O Departamento de Informações disponibiliza essa ferramenta para facilitar <br> na codificação e 
       descodificação de mensagens confidenciais </p>
-      <img src="https://cdn-icons-png.flaticon.com/512/1320/1320547.png" alt="" class="logo-brasao">
+      <img src="https://cdn-icons-png.flaticon.com/512/1320/1320547.png" alt="Imagem de um brasão da polícia" class="logo-brasao">
     </header>
     <main>
-    <div id="area-texto">
-      <textarea id="entradaTexto" placeholder="Escreva aqui sua mensagem confidencial 🔐"></textarea>
-      <textarea id="saidaTexto" readonly></textarea>
-    </div>
-    <div id="chave">
-      <label for="chaveSecreta">🔑 Chave secreta (nº):</label>
-      <input type="number" id="chaveSecreta" min="1" max="99"/>
-    </div>
-    <div id="botoes">
-        <button id="botaoCodificar">Codificar</button>
-        <button id="botaoDescodificar">Descodificar</button>
-    </div>
+      <div id="area-texto">
+        <textarea id="entrada-texto" placeholder="Escreva aqui sua mensagem confidencial 🔐"></textarea>
+        <textarea id="saida-texto" readonly></textarea>
+      </div>
+      <div id="chave">
+        <label for="chave-secreta">🔑 Chave secreta (nº):</label>
+        <input type="number" id="chave-secreta" min="1" max="99"/>
+      </div>
+      <div id="botoes">
+        <button class="botao" id="botao-codificar">Codificar</button>
+        <button class="botao" id="botao-descodificar">Descodificar</button>
+      </div>
     </main>
     <script src="index.js" type="module"></script>
   </body>
